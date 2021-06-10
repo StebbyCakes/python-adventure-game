@@ -2,10 +2,14 @@ class Pirate:
     def __init__(self):
         self.name = input('Hurry up and enter your scallywags name: ')
         self.first_name = 'Bootleg'
-
+        self.piece_of_eight = 0
 
     def show_full_name(self):
         print(self.first_name + ' ' + self.name.capitalize())
+
+    def add_piece_of_eight(self):
+        self.piece_of_eight = self.piece_of_eight + 2
+
 
 def play():
 
