@@ -22,27 +22,23 @@ def play():
     through Rigi Town. Once you've conquered goons of the city, there is a ship that awaits you that carry you across the seas where the sirens await you! Finally you'll arrive at the creeyp cave where Captain Mady awaits you!
     Good luck! """)
 
-    rigi_town()
-    boat_voyage()
-    creepy_cave()
 
     def rigi_town():
-        print('Ahoy! you ')
-        print('(1) ')
-        print('2:')
-        print('3:')
-        print('4:')
+        print("""You've just entered Rigi Town! Wow what an exciting place to be! There are wanted posters all over for Captain Mady, rumor is she stole another booty! Can you believe it?
+        I certainly can. I guess somethings just never change! Look alive! One of Mady's ruffians just approached you!
+        What will you do? (1): Greet her with a nice and warm smile, (2): Run away, or (3): Kick her butt!""")
 
-        answer = input("Enter your choice:")
+        scenario_input = input("Enter a reponse:")
+        if scenario_input == '1':
+            print("Are you serious? This is one of Captain Mady's goons we're talking about. She just kicked you butt and sent you packing!")
+        elif scenario_input == '2':
+            print("How did you become a pirate??? ")
+        elif scenario_input == '3':
+             print("I mean....she did deserve it! Great job beating up Mady's goon. You picked up two pieces of eight from the ground nex to the goon's swollen face!")
+             player.add_piece_of_eight()
+             print(player.piece_of_eight)
 
-        if answer == '1':
-            callfunction()
-        elif answer == '2':
-            callfunction()
-        elif answer == '3':
-            callfunction()
-        elif answer == '4':
-            callfunction()
+        callfunction()
 
     def boat_voyage():
 
