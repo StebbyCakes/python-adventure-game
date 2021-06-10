@@ -60,6 +60,25 @@ def play():
         elif answer == '4':
             callfunction()
 
+    def overboard_sailer():
+
+        print("""You're calmly sailing the seas continuing on your adventure when avast! Your crew has spotted a man overboard to the east! Do you: """)
+        print("""1: Forget the man, because he's out in the open sea proves he was unable to handle her wrath and will do no good to our crew.""")
+        print("""2: Finish him off, put him out of his misery, he's been sunburned far beyond our help anyway.""")
+        print("""3: Save him! Bring him aboard, take his loot, help him heal.""")
+        answer = input("Enter your choice:")
+
+        answer = input(>)
+        if answer == '1':
+            print("""The Pirate Code says to help your fellow pirates, have you fogotten?""")
+            callfunction()
+        elif answer == '2':
+            print("""Maybe a good deed, but even a weak body is an able body in combat.""")
+            callfunction()
+        elif answer == '3':
+            print("""You Truly follow the Pirate Code, or do you just seize opportunity in gaining extra hands on your voyage? It doesnt matter, either way he is the newest addition to the crew.""")
+            callfunction()
+
     def starving_crew():
 
         print("""The crew is starving! With scurvvy on the brink of the horizon, do you: """)
