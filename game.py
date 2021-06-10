@@ -76,26 +76,30 @@ def play():
         elif answer == '4':
             callfunction()
 
-    def creepy_cave():
+    def parting_home():
 
-        print('narrative')
+        print("""You're through with Mady's meddling ruffian. It's time to begin the adventure! You head to the shores and you're met with a man selling Brigantines', perfect size ship for your adventure you think to yourself. So do you: """)
+        print(""""1: Wait until night to board the ship quietly and set sail away without notice.""")
+        print("""2: Approach the man and tell him standing between you and your calling is a dangerous move.""")
+        print("""3: Go back to the island, work for your gold and pay the man his share for his fair ship.""")
 
         answer = input("Enter your choice:")
 
         answer = input(>)
         if answer == '1':
+            print("""You're coward of a pirate one who doesnt plunder as he pleases!""")
             callfunction()
         elif answer == '2':
+            print("""A pirate Lord has been born! The seas face a new threat, any pirate out in the water should tremble in their boots before you and your new awakening""")
             callfunction()
         elif answer == '3':
-            callfunction()
-        elif answer == '4':
+            print("""3: A man who earns his fair share has no right to be a pirate, might as well work for the state and quit this treacherous pirate journey.""")
             callfunction()
 
-    def creepy_cave():
+    def far_seas():
 
         print("""The sense a sinister beast from below the waves, the crew looks overboard and alas! You're under attack by the Kraken! You raise your sails and prepare for battle..... What is this feeling....? So lost... Davy Jones has stolen your soul! He summoned the beast to distract you! As an empty vessel now do you: """)
-        print("""1: If Davy Jones stole my soul it means his hideaout is nearby! Forget the Kraken, an impossible beast to conquer Set sail to the near island!""")
+        print("""1: If Davy Jones stole my soul it means his hideaout is nearby! Forget the Kraken, an impossible beast to conquer Set sail to the nearest2 island!""")
         print("""2: Davy Jones lives with the kraken under the sea, load the cannons, kill the beast and use him to travel beneath the waves""")
         print("""3: He must have escaped and is sailing away to his ship! Climb to the crow's nest and search for his direction to follow.""")
         answer = input("Enter your choice:")
@@ -105,12 +109,10 @@ def play():
             print("""You've become a soulless crew, no heart to fight, Davy Jones made way with your soul.""")
             callfunction()
         elif answer == '2':
-            print("""The Kraken had a weakness in its eye! One cannon shot and he gave lent us his power! It sent us to Davy Jones Locker, retrieved our souls and we freed many others. """)
+            print("""The Kraken had a weakness in its eye! One cannon shot and he lent us his power! It sent us to Davy Jones Locker, retrieved our souls and we freed many others.""")
             callfunction()
         elif answer == '3':
-            print("""You climbed up, scouted the all of your surroundings and found nothing, you barely managed to escape the Kraken too """)
-            callfunction()
-        elif answer == '4':
+            print("""You climbed up, scouted the all of your surroundings and found nothing, you barely managed to escape the Kraken too""")
             callfunction()
 
 
