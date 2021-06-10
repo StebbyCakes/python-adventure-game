@@ -60,20 +60,24 @@ def play():
         elif answer == '4':
             callfunction()
 
-    def creepy_cave():
+    def starving_crew():
 
-        print('narrative')
+        print("""The crew is starving! With scurvvy on the brink of the horizon, do you: """)
+        print("""1: Sail to the nearest island, we need fruits!""")
+        print("""2: Begin to fish in the waters, there's plenty of food in the sea.""")
+        print("""3: We dont need food, just more rum! """)
 
         answer = input("Enter your choice:")
 
         answer = input(>)
         if answer == '1':
+            print("""A seasoned pirate who knows the dangers of sailing the seas without proper feast.""")
             callfunction()
         elif answer == '2':
+            print("""You've settled your hunger but still too young for the sea, she will soon consume you! Scurvvy only happens when you dont eat fruit in proper time. Now you're slowly dying.""")
             callfunction()
         elif answer == '3':
-            callfunction()
-        elif answer == '4':
+            print("""A pirate at heart, you knew what scurvvy could do and doomed your crew with it. Although on purpose to die at seas like a true legend on their last journey.""")
             callfunction()
 
     def parting_home():
@@ -93,13 +97,13 @@ def play():
             print("""A pirate Lord has been born! The seas face a new threat, any pirate out in the water should tremble in their boots before you and your new awakening""")
             callfunction()
         elif answer == '3':
-            print("""3: A man who earns his fair share has no right to be a pirate, might as well work for the state and quit this treacherous pirate journey.""")
+            print("""A man who earns his fair share has no right to be a pirate, might as well work for the state and begone with this treacherous pirate journey.""")
             callfunction()
 
     def far_seas():
 
         print("""The sense a sinister beast from below the waves, the crew looks overboard and alas! You're under attack by the Kraken! You raise your sails and prepare for battle..... What is this feeling....? So lost... Davy Jones has stolen your soul! He summoned the beast to distract you! As an empty vessel now do you: """)
-        print("""1: If Davy Jones stole my soul it means his hideaout is nearby! Forget the Kraken, an impossible beast to conquer Set sail to the nearest2 island!""")
+        print("""1: If Davy Jones stole my soul it means his hideaout is nearby! Forget the Kraken, an impossible beast to conquer, set sail to the nearest island!""")
         print("""2: Davy Jones lives with the kraken under the sea, load the cannons, kill the beast and use him to travel beneath the waves""")
         print("""3: He must have escaped and is sailing away to his ship! Climb to the crow's nest and search for his direction to follow.""")
         answer = input("Enter your choice:")
