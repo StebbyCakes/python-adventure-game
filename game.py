@@ -88,5 +88,26 @@ def play():
         elif answer == '4':
             callfunction()
 
+    def creepy_cave():
+
+        print("""The sense a sinister beast from below the waves, the crew looks overboard and alas! You're under attack by the Kraken! You raise your sails and prepare for battle..... What is this feeling....? So lost... Davy Jones has stolen your soul! He summoned the beast to distract you! As an empty vessel now do you: """)
+        print("""1: If Davy Jones stole my soul it means his hideaout is nearby! Forget the Kraken, an impossible beast to conquer Set sail to the near island!""")
+        print("""2: Davy Jones lives with the kraken under the sea, load the cannons, kill the beast and use him to travel beneath the waves""")
+        print("""3: He must have escaped and is sailing away to his ship! Climb to the crow's nest and search for his direction to follow.""")
+        answer = input("Enter your choice:")
+
+        answer = input(>)
+        if answer == '1':
+            print("""You've become a soulless crew, no heart to fight, Davy Jones made way with your soul.""")
+            callfunction()
+        elif answer == '2':
+            print("""The Kraken had a weakness in its eye! One cannon shot and he gave lent us his power! It sent us to Davy Jones Locker, retrieved our souls and we freed many others. """)
+            callfunction()
+        elif answer == '3':
+            print("""You climbed up, scouted the all of your surroundings and found nothing, you barely managed to escape the Kraken too """)
+            callfunction()
+        elif answer == '4':
+            callfunction()
+
 
 play()
