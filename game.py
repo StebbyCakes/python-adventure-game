@@ -8,6 +8,10 @@ class Pirate:
         print(self.first_name + ' ' + self.name.capitalize())
 
 def play():
+
+    player = Pirate()
+    player.show_full_name()
+
     print("""Ahoy, Matey! You're about to embark on an amazing voyage to obtain Captain Mady's treasure. If you know Captain Mady, then you know this won't be easy. As a seasoned pirate, you know that this voyage will be long and
     tedious; however, no one knows the seaven seas quite like you! In order to obtain Captain Mady's treasure, you must collect all pieces of eight and present them to her. Captain Mady has minions in each destination on your map.
     The pirates will give you a riddle, if answered correctly, then will give you some pieces of eight. Answer incorrectly.....let's just say Captain Mady's pirates aren't too forgiving. Following your map, you must first travel
@@ -67,5 +71,22 @@ def play():
             callfunction()
         elif answer == '4':
             callfunction()
+
+    def creepy_cave():
+
+        print('narrative')
+
+        answer = input("Enter your choice:")
+
+        answer = input(>)
+        if answer == '1':
+            callfunction()
+        elif answer == '2':
+            callfunction()
+        elif answer == '3':
+            callfunction()
+        elif answer == '4':
+            callfunction()
+
 
 play()
