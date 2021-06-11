@@ -18,7 +18,85 @@ def meet_mady():
     typingPrint('You collected all pieces of eight! ')
     typingPrint('After a long voyage at sea, you arrive at a small island. Within that island is a deep cave! ')
     typingPrint('Captain Mady emerges from the shadows and shouts that you must present your eight of pieces! ')
-    typingPrint('You present your pieces of eight and Captain Mady gives you her treasure! Congrats, you won! ')
+    typingPrint(f'You present your pieces of eight and Captain Mady gives you her treasure! Congratulations {player.pirate_promotion}! Youve conquered the seas! ')
+
+def battle(player):
+
+    typingPrint("""Hurry! A pirate ship approaches! What do we do! """)
+    print("\n")
+    print("1: Load the cannons, turn the ship North by North East to have our starboard to their angle, prepare for battle!")
+    print("2: We're not here to fight! Raise the sails!  Turn the ship opposite their direction! Then lower the sails and put them to the wind, we're out of here!")
+    print("3: Climb to the crows nest pronto! Raise the White Flag, we can sail these seas in an alliance!")
+
+    scenario_input = input("Enter your choice:")
+
+    if scenario_input == '1':
+        print("""The enemy ship wanted to be friends, but they raised the white flag too late... or maybe we chose to not see it. Either we sunk their ship and have more treasure in our collection.""")
+        player.add_piece_of_eight()
+        print("\n")
+        print(f"You now have {player.piece_of_eight} of eight pieces")
+        print("\n")
+
+    elif scenario_input == '2':
+        print("""A cowardice play! You survived but with no respect for the Pirate Code! """)
+
+    elif scenario_input == '3':
+        print("""You got lucky the enemy ship was new to the seas, a seasoned crew might have wanted your treasures for themselves. They joined the alliance and you will not split loots. """)
+
+    global game_still_going
+    game_still_going = False
+
+def treasure(player):
+
+    typingPrint("""A treasure map was found on the ship! The crew looks a little closer... an 'x' on an island! This seems unrelated to Mady's pieces of eight. What do you do:  """)
+    print("\n")
+    print("1: Go to the island and plunder it until you find the treasure!")
+    print("2: Forget the map, Mady's Treasure is priority!")
+    print("3: Continue on your journey, if you pass that island along the way, you can drop anchor then.")
+
+    scenario_input = input("Enter your choice:")
+
+    if scenario_input == '1':
+        print("""You found the treasure! Now you'll have more loot for when your adventure is over! """)
+        player.add_piece_of_eight()
+        print("\n")
+        print(f"You now have {player.piece_of_eight} of eight pieces")
+        print("\n")
+
+    elif scenario_input == '2':
+        print("""A captain can make a wrong decisions sometimes. A pirate would gather more treasure than he could hold no matter the cost.""")
+
+    elif scenario_input == '3':
+        print("""You continued to follow the wind, unfortunately it never brought you to the island with free loot.""")
+
+    global game_still_going
+    game_still_going = False
+
+
+def crash_landing(player):
+
+    typingPrint("The ship has crashed! You've scraped a hole into the bottom of the brig! Are you really worthy of being a Captain? The only wood that can be used is from the barrel of rum... but it still half full! Do you: ")
+    print("\n")
+    print("1: Take apart that scoundrelous barrel and hurry up and fix the ship before we sink to the depths and meet Davy Jones Locker for good.")
+    print("2: Pass around that barrel make sure everyone gets their serving, not a drop to spare!")
+    print("3: Argue about who gets to drink the most rum, this way maybe you can have a chance to drink most of it yourself!")
+
+    scenario_input = input("Enter your choice:")
+
+    if scenario_input == '1':
+        print("""You CHOSE to spill rum? The life at sea does not call to you. You may have saved the ship but you lost your pirate heart.""")
+
+    elif scenario_input == '2':
+        print("""You're buzzed and tipping around the ship as you fix her well, you might have barely the hole before she sunk, but you're still on the voyage ahead! """)
+        player.add_piece_of_eight()
+        print("\n")
+        print(f"You now have {player.piece_of_eight} of eight pieces")
+        print("\n")
+    elif scenario_input == '3':
+        print("""As you argue around someone broke the barrel to fix the ship, now nobody got the taste of a good grog.""")
+
+    global game_still_going
+    game_still_going = False
 
 def far_seas(player):
 
@@ -41,10 +119,7 @@ def far_seas(player):
         print("\n")
     elif scenario_input == '3':
         print("""You climbed up, scouted the all of your surroundings and found nothing, you barely managed to escape the Kraken too""")
-        player.add_piece_of_eight()
-        print("\n")
-        print(f"You now have {player.piece_of_eight} of eight pieces")
-        print("\n")
+
 
     global game_still_going
     game_still_going = False
@@ -196,10 +271,15 @@ def play():
             def __init__(self):
                 self.name = input('Hurry up and enter your scallywags name: ')
                 self.first_name = 'Bootleg'
+                self.promotion = 'Captain'
                 self.piece_of_eight = 0
 
             def show_full_name(self):
                 print(self.first_name + ' ' + self.name.capitalize())
+
+            def pirate_promotion(self):
+                print(self.promotion + ' ' + self.name.capitalize())
+
 
             def add_piece_of_eight(self):
                 self.piece_of_eight = self.piece_of_eight + 2
