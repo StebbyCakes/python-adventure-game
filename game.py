@@ -106,7 +106,7 @@ def boat_voyage(player):
     typingPrint('Yay! You now on your first sailing voyage! Just as you begin to relax you begin hearing a lovely sound from the distance. The sound is alluring and seems to beckoning you to sail in that direction.')
     typingPrint("You begin to follow the lovely sound. As you get closer you notice some strange beings in the water. Wait....are those sirens?")
     typingPrint("Three beautiful mermaids are bathing on a rock! They introduce themselves as Kate, Lea, and Trevor.")
-    typingPrint("Kate says that she's that she knows the way to Captain Mady treasure. Lea begins singing about being part of your world. Trevor pulls out a slice of pizza and begins to stare away. Which siren will you ask for help?")
+    typingPrint("Kate says that she knows the way to Captain Mady's treasure. Lea begins singing about being part of your world. Trevor pulls out a slice of pizza and begins to stare away. Which siren will you ask for help?")
     print("\n")
     print("1: Kate")
     print("2: Lea")
