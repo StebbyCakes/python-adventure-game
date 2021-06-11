@@ -18,7 +18,7 @@ def meet_mady():
     typingPrint('You collected all pieces of eight! ')
     typingPrint('After a long voyage at sea, you arrive at a small island. Within that island is a deep cave! ')
     typingPrint('Captain Mady emerges from the shadows and shouts that you must present your eight of pieces! ')
-    typingPrint(f'You present your pieces of eight and Captain Mady gives you her treasure! Congratulations {player.pirate_promotion}! Youve conquered the seas! ')
+    typingPrint(f'You present your pieces of eight and Captain Mady gives you her treasure! Congratulations {player.pirate_promotion()}! Youve conquered the seas! ')
 
 def battle(player):
 
@@ -69,8 +69,10 @@ def treasure(player):
     elif scenario_input == '3':
         print("""You continued to follow the wind, unfortunately it never brought you to the island with free loot.""")
 
-    global game_still_going
-    game_still_going = False
+    if player.piece_of_eight == 8:
+        global game_still_going
+        game_still_going = False
+    else: battle(player)
 
 
 def crash_landing(player):
@@ -95,8 +97,10 @@ def crash_landing(player):
     elif scenario_input == '3':
         print("""As you argue around someone broke the barrel to fix the ship, now nobody got the taste of a good grog.""")
 
-    global game_still_going
-    game_still_going = False
+    if player.piece_of_eight == 8:
+        global game_still_going
+        game_still_going = False
+    else: treasure(player)
 
 def far_seas(player):
 
@@ -121,8 +125,10 @@ def far_seas(player):
         print("""You climbed up, scouted the all of your surroundings and found nothing, you barely managed to escape the Kraken too""")
 
 
-    global game_still_going
-    game_still_going = False
+    if player.piece_of_eight == 8:
+        global game_still_going
+        game_still_going = False
+    else: crash_landing(player)
 
 def starving_crew(player):
 
